@@ -56,7 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tavisca.Assignment.EF.Model\Tavisca.Assignment.EF.CF.Model.csproj">
+    <ProjectReference Include="..\Tavisca.Assignment.EF.CF.Model\Tavisca.Assignment.EF.CF.Model.csproj">
       <Project>{516e013e-a0e7-44c1-804b-7dc82eea7ee3}</Project>
       <Name>Tavisca.Assignment.EF.CF.Model</Name>
     </ProjectReference>
