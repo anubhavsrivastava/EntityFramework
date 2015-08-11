@@ -1,4 +1,5 @@
 using System.Data.Entity;
+using Tavisca.Assignment.EF.CF.DataLayer;
 using Tavisca.Assignment.EF.CF.Model;
 
 namespace Tavisca.Asssignment.EF.CF.DataLayer
@@ -14,6 +15,13 @@ namespace Tavisca.Asssignment.EF.CF.DataLayer
         public UserDbContext()
             : base("name=UserDbContext")
         {
+            Database.SetInitializer(new DefaultDatabaseInitializer());
+        }
+
+        public UserDbContext(IDatabaseInitializer<UserDbContext> strategy)
+            : base("name=UserDbContext")
+        {
+            Database.SetInitializer(strategy);
         }
 
         public DbSet<User> Users { get; set; }

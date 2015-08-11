@@ -58,6 +58,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CRUDTest.cs" />
+    <Compile Include="TestDatabaseInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
